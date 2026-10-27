@@ -1,0 +1,191 @@
+{
+  "tasks": [
+    {
+      "id": "P01",
+      "phase": "Planeación",
+      "task": "Definir alcance y criterios",
+      "hours": 6,
+      "start": "2026-10-12",
+      "end": "2026-10-12",
+      "depends": "Acta de Constitución"
+    },
+    {
+      "id": "P02",
+      "phase": "Planeación",
+      "task": "Construir EDT/WBS",
+      "hours": 4,
+      "start": "2026-10-13",
+      "end": "2026-10-13",
+      "depends": "P01"
+    },
+    {
+      "id": "P03",
+      "phase": "Planeación",
+      "task": "Elaborar cronograma",
+      "hours": 4,
+      "start": "2026-10-14",
+      "end": "2026-10-14",
+      "depends": "P02"
+    },
+    {
+      "id": "P04",
+      "phase": "Planeación",
+      "task": "Estimar presupuesto",
+      "hours": 4,
+      "start": "2026-10-15",
+      "end": "2026-10-15",
+      "depends": "P03"
+    },
+    {
+      "id": "P05",
+      "phase": "Planeación",
+      "task": "Analizar riesgos",
+      "hours": 4,
+      "start": "2026-10-16",
+      "end": "2026-10-16",
+      "depends": "P04"
+    },
+    {
+      "id": "E01",
+      "phase": "Ejecución",
+      "task": "Preparar y perfilar datos",
+      "hours": 10,
+      "start": "2026-10-19",
+      "end": "2026-10-19",
+      "depends": "P05"
+    },
+    {
+      "id": "E02",
+      "phase": "Ejecución",
+      "task": "Definir modelo e indicadores",
+      "hours": 9,
+      "start": "2026-10-20",
+      "end": "2026-10-20",
+      "depends": "E01"
+    },
+    {
+      "id": "E03",
+      "phase": "Ejecución",
+      "task": "Construir tablero demostrativo",
+      "hours": 13,
+      "start": "2026-10-21",
+      "end": "2026-10-22",
+      "depends": "E02"
+    },
+    {
+      "id": "E04",
+      "phase": "Ejecución",
+      "task": "Verificar cálculos y navegación",
+      "hours": 7,
+      "start": "2026-10-23",
+      "end": "2026-10-23",
+      "depends": "E03"
+    },
+    {
+      "id": "E05",
+      "phase": "Ejecución",
+      "task": "Documentar comunicaciones",
+      "hours": 4,
+      "start": "2026-10-23",
+      "end": "2026-10-23",
+      "depends": "P05"
+    },
+    {
+      "id": "C01",
+      "phase": "Cierre",
+      "task": "Integrar anexos y evidencias",
+      "hours": 4,
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "depends": "E04"
+    },
+    {
+      "id": "C02",
+      "phase": "Cierre",
+      "task": "Revisar enlaces y cierre académico",
+      "hours": 3,
+      "start": "2026-10-26",
+      "end": "2026-10-26",
+      "depends": "C01"
+    }
+  ],
+  "risks": [
+    {
+      "id": "R01",
+      "risk": "Datos demostrativos no representan la PYME",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Explicitar el origen y separar el escenario simulado.",
+      "contingency": "Utilizar datos sintéticos locales y limitar conclusiones.",
+      "category": "Datos"
+    },
+    {
+      "id": "R02",
+      "risk": "Errores de modelado o cálculos",
+      "likelihood": 3,
+      "impact": 5,
+      "mitigation": "Definir fórmulas y reconciliar totales con CSV.",
+      "contingency": "Corregir cálculo y registrar la incidencia.",
+      "category": "Calidad"
+    },
+    {
+      "id": "R03",
+      "risk": "Desfase del cronograma",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Priorizar hitos críticos y reservar contingencia.",
+      "contingency": "Reducir alcance no obligatorio conservando entregables.",
+      "category": "Tiempo"
+    },
+    {
+      "id": "R04",
+      "risk": "Ampliación no controlada de alcance",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Registrar inclusiones y exclusiones.",
+      "contingency": "Posponer integraciones no académicas.",
+      "category": "Alcance"
+    },
+    {
+      "id": "R05",
+      "risk": "Enlaces o archivos PDF inaccesibles",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Probar rutas relativas en GitHub Pages.",
+      "contingency": "Volver a cargar anexos y validar permisos.",
+      "category": "Publicación"
+    },
+    {
+      "id": "R06",
+      "risk": "Limitaciones de Power BI online gratuito",
+      "likelihood": 4,
+      "impact": 3,
+      "mitigation": "Mantener evidencia local o prototipo web sin licencia.",
+      "contingency": "Presentar archivo demostrativo, capturas y metodología.",
+      "category": "Tecnología"
+    },
+    {
+      "id": "R07",
+      "risk": "Dependencia de un solo integrante",
+      "likelihood": 3,
+      "impact": 3,
+      "mitigation": "Control de versiones y entregables parciales.",
+      "contingency": "Concentrar esfuerzos en componentes obligatorios.",
+      "category": "Recurso"
+    },
+    {
+      "id": "R08",
+      "risk": "Mala interpretación del ROI proyectado",
+      "likelihood": 3,
+      "impact": 4,
+      "mitigation": "Exponer hipótesis y fórmula de estimación.",
+      "contingency": "Presentar escenario conservador y limitar conclusiones.",
+      "category": "Finanzas"
+    }
+  ],
+  "hourly_rate": 25000,
+  "contingency_rate": 0.1,
+  "maintenance_monthly": 20000,
+  "baseline_hours_monthly": 12,
+  "target_hours_monthly": 4
+}

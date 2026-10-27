@@ -1,0 +1,17 @@
+{
+  "indicacion": "180 registros sintéticos reproducibles de forma determinista. Todos los importes se expresan en COP. No equivalen a Financial Sample de Microsoft.",
+  "seed": 260410,
+  "cantidad": 180,
+  "campos": [
+    "pedido",
+    "fecha",
+    "mes",
+    "segmento",
+    "ciudad",
+    "producto",
+    "unidades",
+    "ventas_cop",
+    "costo_cop",
+    "utilidad_cop"
+  ]
+}
